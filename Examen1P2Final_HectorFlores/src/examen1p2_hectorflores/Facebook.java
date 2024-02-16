@@ -17,6 +17,7 @@ public class Facebook extends SocialClass implements Commentable {
 
         if (postID >= 0 && postID < posts.size()) {
             comentarios.add(comment);
+            JOptionPane.showMessageDialog(null, "Comentario agregado!");
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "PostID invalido");
