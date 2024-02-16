@@ -85,7 +85,6 @@ public class UberSocial {
         SocialClass cuentaUsuario = buscar(username, 0);
         if (cuentaUsuario != null && cuentaUsuario instanceof Facebook) {
             ((Facebook) cuentaUsuario).addComment(new Comment(postID, autor, comentario));
-            JOptionPane.showMessageDialog(null, "Comentario agregado!");
         } else {
             JOptionPane.showMessageDialog(null, "Usuario no encontrado o no es una cuenta de Facebook");
         }
