@@ -2,7 +2,7 @@ package examen1p2_hectorflores;
 import java.util.ArrayList;
 
 
-public abstract class Facebook extends SocialClass implements Commentable {
+public class Facebook extends SocialClass implements Commentable {
     private ArrayList <Comment> comentarios;
     
     public Facebook(String username) {
